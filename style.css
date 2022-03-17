@@ -149,7 +149,7 @@ a {
     align-items: center;
 }
 #dishes > div > span {
-    color: white;
+    color: orange;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -313,7 +313,7 @@ select{
     background-color:#1d1e27;
     border:1.5px solid;
     border-radius:0.8rem;
-    
+    text-align: center;
 }
 #food{
     flex-direction: row;
