@@ -11,10 +11,11 @@
 
 #main {
     background-image: url(./images/background\ 2.webp);
-    height:40vh;
+    height: 30vh;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    display: flex;
+    flex-direction: column;
 }
 li {
     cursor: pointer;
@@ -36,6 +37,48 @@ header {
 .desktop-nav > img {
     width: 50px;
 }
+.mobile-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-logo {
+    width: 100px;
+}
+.mobile-menu-btn {
+    color: white;
+    cursor: pointer;
+}
+.mobile-menu {
+    margin-top: 7rem;
+    position: absolute;
+    height: 30vh;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+   display:none;
+}
+
+.menu-content{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(29, 30, 39);
+    height: 30vh;
+    border-radius: 1rem;
+}
+
+.mobile-menu >div > ul > li {
+    list-style: none;
+    margin:1rem;
+    text-align: center;
+}
+#hide-btn{
+    display:none;
+}
+
 .desktop-nav > ul {
     display: flex;
     justify-content: space-around;
@@ -68,8 +111,6 @@ a {
     color: white;
 }
 
-
-
 .followers {
     display: flex;
     margin-top: 30px;
@@ -88,7 +129,6 @@ a {
     background-image: url(./images/background\ 1.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .container {
@@ -97,9 +137,8 @@ a {
     max-width: 700px;
     margin: 50px 0px 50px 0px;
     padding: 10px;
-    
 }
-#about-us > .container{
+#about-us > .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +158,8 @@ a {
     margin-bottom: 15px;
     margin-left: 5px;
     color: white;
+    text-align: center;
+    font-size: 1.5rem;
 }
 #about-us > div > span + h2 + p + p {
     margin-bottom: 15px;
@@ -127,13 +168,13 @@ a {
 }
 #about-us > div > span + h2 + p + p + a {
     display: block;
-    background:#1d1e27;
+    background: #1d1e27;
     margin-bottom: 15px;
     margin-left: 5px;
     border: 1px solid 1d1e27;
     padding: 1rem;
-    width:12rem;
-    border-radius:1.5rem;
+    width: 12rem;
+    border-radius: 1.5rem;
     text-align: center;
 }
 
@@ -164,14 +205,13 @@ a {
     padding-bottom: 20px;
     color: #ffff;
     border-bottom: 1px solid white;
-    
 }
 .desktop-menu > ul > li {
     margin-right: 20px;
     font-size: 25px;
 }
-select{
-    display:none;
+select {
+    display: none;
 }
 #food {
     display: flex;
@@ -184,7 +224,6 @@ select{
 #meal4,
 #meal5 {
     display: none;
-    
 }
 .images {
     display: flex;
@@ -241,13 +280,12 @@ select{
     max-width: 90%;
 }
 
-.testimonials{
+.testimonials {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(48, 48, 66);
     padding: 50px;
-    
 }
 
 .testimonials > .container {
@@ -265,69 +303,73 @@ select{
 .testimonials > div > span {
     color: orange;
     font-size: 20px;
-    
 }
 
 .testimonials > div > h4 {
     color: white;
     font-size: 50px;
-   
 }
 .testimonials > div > p {
     color: white;
     font-size: 20px;
-    
 }
 @media only screen and (max-width: 1040px) {
-    section , #dishes , .hours , .testimonials{
-        padding:20px;
+    section,
+    #dishes,
+    .hours,
+    .testimonials {
+        padding: 20px;
     }
-    .container{
-    justify-content: center;
-    margin: 0px;
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-}
-#main > section{
-    padding:0px;
+    .container {
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .mobile-header{
+    display: flex;
 }
 #main{
-    display: flex;
-    justify-content: center;
+    height:50vh;
 }
-#main > section > h1{
-    font-size:3rem;
-}
-.desktop-nav{
-    display:none;
-}
-.desktop-menu{
-    display:none;
-}
-select{
-    display:block;
-    padding:5px;
-    margin-top: 1rem;
-    color:orange;
-    background-color:#1d1e27;
-    border:1.5px solid;
-    border-radius:0.8rem;
-    text-align: center;
-}
-#food{
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-    
-}
-.time > div > span + span{
-    font-size: 1rem;
-    text-align: center;
-    margin-left:0px;
-}
-.images{
-    margin-right:0px
-}
+    #main > section {
+        padding: 0px;
+    }
 
+    #main > section > h1 {
+        font-size: 3rem;
+    }
+    .desktop-nav {
+        display: none;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    select {
+        display: block;
+        padding: 5px;
+        margin-top: 1rem;
+        color: orange;
+        background-color: #1d1e27;
+        border: 1.5px solid;
+        border-radius: 0.8rem;
+        text-align: center;
+    }
+    #food {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+    }
+    .time > div > span + span {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .images {
+        margin-right: 0px;
+    }
+    .text {
+        height: 30vh;
+    }
 }

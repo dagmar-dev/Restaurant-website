@@ -5,26 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>cuisine restaurant</title>
+    <script src="https://kit.fontawesome.com/89bceb8d1e.js" crossorigin="anonymous"></script>
+    <title>cuisine restaurant</title> 
 </head>
-<body>
+<body> 
     <header>
         <div class="desktop-nav">
           <img src="./images/logo.png" alt="logo">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#dishes">Menu</a></li>
             <li><a href=".meals">Order Now</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Location</a></li>
             
         </ul>
         </div>
-    </nav>
+        
+    <div class="mobile-nav">
+
+        <nav>
+
+        </nav>
+    </div>
+    
     </header>
+    
     <section id="main">
+           <div class="mobile-header">
+         <img src="./images/logo.png" class="mobile-logo"alt="logo">
+         <i class="fa-solid fa-bars fa-2xl mobile-menu-btn" id="show-menu"></i>
+         <i class="fa-solid fa-x fa-2xl mobile-menu-btn" id="hide-btn"></i>
+     </div>
+     <div class="mobile-menu " >
+         <div class="menu-content">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#dishes">Menu</a></li>
+            <li><a href=".meals">Order Now</a></li>            
+        </ul>
+        </div>
+    </div>
+
     <section class="text container">
+        
         <h1>Welcome To Our Cuisine Restaurant</h1>
        
     </section>
@@ -34,11 +58,8 @@
        
         <div class="container about-us">
             <span>About us</span>
-            <h2>Discover Our Restaurant Story</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore est veniam ratione optio, omnis suscipit dolorem culpa eos, quisquam tempore incidunt asperiores, ducimus tenetur blanditiis! Deserunt laboriosam itaque maiores fugiat.
-            Quos sequi, natus, molestiae nostrum illo facere nulla modi necessitatibus totam hic obcaecati ipsum ex fugit nemo, error repellendus repellat? Aliquid cupiditate obcaecati nihil nisi? Dolore blanditiis quidem atque provident.
-            Laborum magni deserunt consectetur, possimus nihil sunt nam quaerat illum porro laboriosam culpa soluta necessitatibus rem mollitia maxime quos temporibus, ut excepturi aliquam cumque expedita? Iure recusandae rerum aspernatur atque.</p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex, earum hic quos cupiditate debitis eveniet tempore eos blanditiis, deserunt doloremque, veniam non cum excepturi magni fugit iusto repellendus autem!</p>
+            <h2>Our Restaurant </h2>
+            <p>Cuisine Restaurant is a chef-driven restaurant that provides an unparalleled dining experience. Enjoy our mouth-watering dishes in an upscale ambiance. Plans vary from weekday dinners, weekend brunches, to private events with customized menus.</p>
             <a href="#dishes">Discover Menu</a>
         </div>
     </section>
@@ -58,7 +79,7 @@
         </div>
         <select name="Menu" id="mobile-menu">
             <option  value="Breakfast" class="item1", class = "reset" >Breakfast</option>
-            <option value="Lunch" class="item2", class = "reset" >Lunch</loption
+            <option value="Lunch" class="item2", class = "reset" >Lunch</loption>
             <option value="Dinner" class="item3", class = "reset" >Dinner</option>
             <option value="Dessert" class="item4", class = "reset" >Dessert</option>
             <option  value="Shake"class="item5">Shake</li>
@@ -83,9 +104,11 @@
                      <img class="images" src="./images/breakfast 3.webp" alt="food">
             <img class="images" src="./images/breakfast 1.webp" alt="food">
             <img class="images" src="./images/breakfast 2.webp" alt="food">
+            <img class="images" src="./images/breakfast 2.webp" alt="food">
            
-            <img class="images" src=
+            
                 </div>
+            </div>
             </section>
             <section id="meal3">
             <div class="container dishes">
@@ -149,7 +172,7 @@
         <h4>Customer Say</h4>
         <img src="./images/avatar-anisha.png" alt="avatar">
         <span>Anisha Smith</span>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, esse ducimus quae vel soluta accusamus quos rerum ad culpa quam? Beatae odit fugiat aliquam temporibus cum ducimus quas similique consectetur!</p>
+        <p>I'm a foodie and I can't think of anything more boring than going to a restaurant. I usually end up feeling nauseous when they bring out bread and butter. My experience at cuisine restaurant was really different. They have an incredible mix of dishes and their customer service is on point! They were attentive, personable, and able to make recommendations on what to order</p>
         </div>
     </section>
     <script src="main.js"></script>
